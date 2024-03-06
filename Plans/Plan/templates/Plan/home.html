@@ -6,13 +6,31 @@
   <title>Workout Subscriptions</title>
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <style>
+    .navbar {
+      width: 100%;
+      background-color: #ff6600;
+    }
+    .navbar-nav .nav-link {
+  padding-right: 20px;
+  padding-left: 20px;
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+@media (max-width: 768px) {
+  .navbar-nav .nav-link {
+    padding: 10px;
+    font-size: 14px;
+  }
+}
+  </style>
 </head>
 <body>
   <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <ul class="navbar-nav mr-auto">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <ul class="navbar-nav ml-auto">
         <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="/plans/">Subscription Plans</a></li>
         <li class="nav-item"><a class="nav-link" href="/login/">Login</a></li>
         <li class="nav-item"><a class="nav-link" href="/signup/">Sign Up</a></li>
       </ul>
@@ -23,6 +41,17 @@
     <h1>Welcome to our Workout Subscription Service</h1>
     <p>Choose a plan and start your fitness journey today!</p>
   </main>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <img src="https://i.imgur.com/rPEuB7i.jpeg" class="img-fluid" alt="Subscription free trail Image">
+      </div>
+      <div class="col-md-6">
+        <img src="https://i.imgur.com/l2uKylU.jpeg" class="img-fluid" alt="Subscription paid Image">
+      </div>
+    </div>
+  </div>
 
   <footer class="footer">
     <p>footer</p>
