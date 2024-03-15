@@ -15,12 +15,36 @@
     .navbar-nav .nav-link {
       color: black;
       font-weight: bold;
+      text-decoration: none;
+    }
+    .nav-item {
+      padding-left: 5px;
+      padding-right: 5px;
+      text-decoration: none;
     }
     .signup-link {
-      border: 3px solid whitesmoke
+      border: 3px solid whitesmoke;
       padding: 5px 20px;
       border-radius: 2px;
       background-color: whitesmoke;
+    }
+    @media (max-width: 992px) {
+      .signup-link {
+        background-color: #ff6600;
+        border: #ff6600;
+      }
+    }
+    .footer {
+      background-color: #ff6600;
+      padding: 20px 0;
+      color: white;
+    }
+    .footer-icons a {
+      color: white;
+      padding-left: 5px;
+      padding-right: 5px;
+      font-size: 24px;
+      margin: 0 10px;
     }
   </style>
 </head>
@@ -51,22 +75,53 @@
   <div class="container">
     <div class="row">
       <div class="col-md-6">
-        <img src="https://i.imgur.com/rPEuB7i.jpeg" class="img-fluid" alt="Subscription free trail Image">
+        <img src="https://i.imgur.com/rPEuB7i.jpeg" class="img-fluid" alt="Subscription free trial Image">
+        <button class="btn btn-primary btn-lg">Free Trial</button>
+        <h5 class="text-center">Discover the Benefits of Our Free Trial Workout Subscription</h5>
+        <p class="text-center">Ready to jumpstart your fitness journey? 
+          <br>
+          Try our free trial workout subscription 
+          and access a range of resources to help you reach your goals.
+          <br>
+          Enjoy unlimited workout videos, expert guidance, customizable fitness plans, 
+          community support, and exclusive offers.
+          <br>
+          Sign up today and experience the difference!
+          </p>
       </div>
       <div class="col-md-6">
         <img src="https://i.imgur.com/l2uKylU.jpeg" class="img-fluid" alt="Subscription paid Image">
+        <button class="btn btn-primary btn-lg">Subscribe</button>
+        <h5 class="text-center">Unlock Your Potential with Our Paid Subscription Plan</h5>
+        <p class="text-center">Ready to take your fitness journey to the next level? 
+          <br>
+          Our paid subscription plan offers an array of premium features 
+          designed to optimize your workouts and maximize results.
+          <br> 
+          Gain access to exclusive content, personalized training programs tailored to your goals, 
+          live sessions with certified trainers, nutritional guidance, and much more. 
+          <br>
+          Elevate your fitness experience and achieve your aspirations with our paid subscription. 
+          Join today and unlock a world of possibilities!
+          </p>
       </div>
     </div>
   </div>
-  <br>
   <footer class="footer">
-    <div class="container">
-      <p class="text-center">Footer</p>
+    <div class="container text-center">
+      <p>Follow us on social media!</p>
+      <div class="footer-icons">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
     </div>
   </footer>
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/47f7e4aa6c.js" crossorigin="anonymous"></script>
 </body>
 </html>
