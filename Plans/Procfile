@@ -1,0 +1,1 @@
+web gunicorn workout-plan.swgi:application --log-file -
